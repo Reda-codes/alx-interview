@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-import math
 """
 pascal_triangle(n) a function returns a list of lists
 of integers representing the Pascal triangle of n
 """
+import math
 
 
 def pascal_triangle(n):
