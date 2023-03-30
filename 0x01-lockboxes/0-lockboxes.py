@@ -19,6 +19,6 @@ def canUnlockAll(boxes):
                 keys.append(key)
 
     for i in range(len(boxes)):
-        if i not in visited:
+        if i not in unlocked:
             return False
     return True
