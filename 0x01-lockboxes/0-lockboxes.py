@@ -2,6 +2,8 @@
 """
 Lockboxes Challenge
 """
+
+
 def canUnlockAll(boxes):
     keys = set(boxes[0])
     unlocked = set([0])
