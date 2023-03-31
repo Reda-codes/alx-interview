@@ -7,18 +7,15 @@ Lockboxes Challenge
 def canUnlockAll(boxes):
     keys = [0]
     unlocked = set()
-    visited = set()
+    visited = []
 
     while keys:
         box = keys.pop()
         unlocked.add(box)
-        visited.add(box)
+        visited.append(box)
 
         for key in boxes[box]:
-            if key not in visited:
+            if key not in visited and key < len(boxes):
                 keys.append(key)
 
-    for i in range(len(boxes)):
-        if i not in unlocked:
-            return False
-    return True
+    return len(unlocked) == len(boxes)
