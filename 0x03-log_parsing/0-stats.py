@@ -12,7 +12,7 @@ if __name__ == "__main__":
         status = int(lst[-2])
         size = int(lst[-1])
         if count == 10:
-            print('File size:{}'.format(totalSize))
+            print('File size: {}'.format(totalSize))
             count = 0
             statusList.sort()
             printed = []
