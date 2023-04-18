@@ -6,11 +6,12 @@ Method that determines if a given data set represents a valid UTF-8 encoding
 
 def validUTF8(data):
     """validUTF8 function"""
-    for i in data:
-        s = chr(i)
-        if len(s) == len(s.encode()):
-            continue
-        else:
-            return False
-            break
+    try:
+        byteData = bytes(data)
+        byteData.decode('utf-8')
+    except UnicodeDecodeError:
+        return False
+    except ValueError:
+        return False
     return True
+    
