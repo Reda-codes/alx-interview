@@ -14,4 +14,3 @@ def validUTF8(data):
     except ValueError:
         return False
     return True
-    
