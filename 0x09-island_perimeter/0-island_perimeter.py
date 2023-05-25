@@ -3,7 +3,8 @@
 from typing import List
 
 
-def island_perimeter(grid: List[List[int]]):
+def island_perimeter(grid: List[List[int]]) -> int:
+    ''' island_perimeter function '''
     perimeter = 0
     for i in range(len(grid)):
         for j in range(len(grid[i])):
