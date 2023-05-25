@@ -1,9 +1,8 @@
 #!/usr/bin/python3
 ''' 0-island_perimeter file '''
-from typing import List
 
 
-def island_perimeter(grid: List[List[int]]) -> int:
+def island_perimeter(grid):
     ''' island_perimeter function '''
     perimeter = 0
     for i in range(len(grid)):
