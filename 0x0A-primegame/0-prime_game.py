@@ -1,9 +1,12 @@
 #!/usr/bin/python3
+"""0. Prime Game Module """
+
+
 def isWinner(x, nums):
     """ Is Winner function """
     mariaWins = 0
     benWins = 0
-    
+
     def isPrime(num):
         """ Check  if number is prime """
         if num < 2:
@@ -19,13 +22,11 @@ def isWinner(x, nums):
         for j in range(1, n+1):
             if isPrime(j):
                 primeCount += 1
-        
+
         if primeCount % 2 == 0:
             benWins += 1
         else:
             mariaWins += 1
-
-
     if mariaWins > benWins:
         return "Maria"
     elif benWins > mariaWins:
